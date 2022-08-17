@@ -5,6 +5,8 @@ Project made as a Challenge to the MediaLab's Company
 KingFisher<br/>
 URLSession<br/>
 Unit Tests<br/>
+Bindable<br/>
+Localize<br/>
 
 # Preview
 <img src="https://github.com/renatomateusx/MediaLabWeatherChallenge/blob/master/MediaLabWeatherChallenge.gif" width="350" title="MediaLabs Challenge">
