@@ -25,6 +25,11 @@
 		3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73E28A3F0F90095A667 /* WeatherService.swift */; };
 		3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E74228A3F48F0095A667 /* HomeViewModel.swift */; };
 		3072E74528A3F5AD0095A667 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */; };
+		30C1645928ADA01D00923997 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C1645828ADA01D00923997 /* Localizable.strings */; };
+		30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645A28ADA0DB00923997 /* String+Extensions.swift */; };
+		30C1645D28ADA17200923997 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645C28ADA17200923997 /* Localizable.swift */; };
+		30C1645F28ADA70E00923997 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645E28ADA70E00923997 /* Bindable.swift */; };
+		30C1646128ADAAFE00923997 /* MediaLabWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1646028ADAAFE00923997 /* MediaLabWeatherTests.swift */; };
 		D2944DF3288D4D4EFACC5638 /* Pods_MediaLabWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2D1B836DBC26F88792E1FF /* Pods_MediaLabWeather.framework */; };
 		FC556EE4B4612ACFFF86970F /* Pods_MediaLabWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF72D8A0A8BCF9E35C93B4 /* Pods_MediaLabWeatherTests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +75,11 @@
 		3072E73E28A3F0F90095A667 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		3072E74228A3F48F0095A667 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		30C1645828ADA01D00923997 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		30C1645A28ADA0DB00923997 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		30C1645C28ADA17200923997 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		30C1645E28ADA70E00923997 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		30C1646028ADAAFE00923997 /* MediaLabWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLabWeatherTests.swift; sourceTree = "<group>"; };
 		4C2D1B836DBC26F88792E1FF /* Pods_MediaLabWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaLabWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FED5E293ABCBFAF61C0ECFA /* Pods-MediaLabWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaLabWeather.debug.xcconfig"; path = "Target Support Files/Pods-MediaLabWeather/Pods-MediaLabWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		A5657173C566DC10858FC77F /* Pods-MediaLabWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaLabWeather.release.xcconfig"; path = "Target Support Files/Pods-MediaLabWeather/Pods-MediaLabWeather.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +154,7 @@
 				3072E71228A3DF490095A667 /* HomeViewModelTests.swift */,
 				3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */,
 				3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */,
+				30C1646028ADAAFE00923997 /* MediaLabWeatherTests.swift */,
 			);
 			path = MediaLabWeatherTests;
 			sourceTree = "<group>";
@@ -172,6 +183,8 @@
 				3072E6FB28A3DF480095A667 /* AppDelegate.swift */,
 				3072E70428A3DF490095A667 /* Assets.xcassets */,
 				3072E72D28A3E0CB0095A667 /* Extensions */,
+				30C1645828ADA01D00923997 /* Localizable.strings */,
+				30C1645C28ADA17200923997 /* Localizable.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -180,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */,
+				30C1645A28ADA0DB00923997 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 			children = (
 				3072E73428A3E11B0095A667 /* NetworkService.swift */,
 				3072E73628A3E1230095A667 /* Constants.swift */,
+				30C1645E28ADA70E00923997 /* Bindable.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -367,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3072E70828A3DF490095A667 /* LaunchScreen.storyboard in Resources */,
+				30C1645928ADA01D00923997 /* Localizable.strings in Resources */,
 				3072E70528A3DF490095A667 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,12 +493,15 @@
 				3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */,
 				3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */,
 				3072E73D28A3EFF20095A667 /* WeatherEndPoint.swift in Sources */,
+				30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */,
 				3072E74528A3F5AD0095A667 /* UIViewController+Extensions.swift in Sources */,
 				3072E70028A3DF480095A667 /* HomeViewController.swift in Sources */,
 				3072E6FC28A3DF480095A667 /* AppDelegate.swift in Sources */,
+				30C1645F28ADA70E00923997 /* Bindable.swift in Sources */,
 				3003D74628A40B3300D7D3C1 /* Coordinates.swift in Sources */,
 				3072E73528A3E11B0095A667 /* NetworkService.swift in Sources */,
 				3072E6FE28A3DF480095A667 /* SceneDelegate.swift in Sources */,
+				30C1645D28ADA17200923997 /* Localizable.swift in Sources */,
 				3072E73B28A3EE590095A667 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +513,7 @@
 				3003D74828A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift in Sources */,
 				3003D74A28A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift in Sources */,
 				3072E71328A3DF490095A667 /* HomeViewModelTests.swift in Sources */,
+				30C1646128ADAAFE00923997 /* MediaLabWeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

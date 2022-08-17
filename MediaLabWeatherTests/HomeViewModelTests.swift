@@ -25,7 +25,11 @@ class HomeViewModelTests: XCTestCase {
     
     func testFetchIfSuccess() {
         viewModel = HomeViewModel(with: serviceMockSuccess)
-        viewModel?.delegate = self
+        viewModel.weather.bind { [unowned self] (_) in
+            if let weather = self.viewModel.weather.value {
+                self.successCompletion(weather)
+            }
+        }
         let expectation = XCTestExpectation.init(description: "Weather Data")
         self.successCompletion = { posts in
             XCTAssertNotNil(posts, "No data was downloaded.")
@@ -37,7 +41,11 @@ class HomeViewModelTests: XCTestCase {
     
     func testFetchPostsIfFailure() {
         viewModel = HomeViewModel(with: serviceMockFailure)
-        viewModel.delegate = self
+        viewModel.error.bind { [unowned self] (_) in
+            if let error = self.viewModel.error.value {
+                failureCompletion(error)
+            }
+        }
         let expectation = XCTestExpectation.init(description: "Error")
         self.failureCompletion = { error in
             XCTAssertNotNil(error, "No data was downloaded.")
@@ -45,15 +53,5 @@ class HomeViewModelTests: XCTestCase {
         }
         viewModel.fetchData(Coordinates(lon: -22.0000, lat: 33.0000))
         wait(for: [expectation], timeout: 60.0)
-    }
-}
-
-extension HomeViewModelTests: HomeViewModelDelegate {
-    func onSuccessFetchingWeather(weather: WeatherResult) {
-        successCompletion(weather)
-    }
-    
-    func onFailureFetchingWeather(error: Error) {
-        failureCompletion(error)
     }
 }

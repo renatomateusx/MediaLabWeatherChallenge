@@ -15,9 +15,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let _ = (scene as? UIWindowScene) else { return }
         guard let windoeScene = (scene as? UIWindowScene) else { return }
+        
+        let vc = HomeViewController()
+        vc.viewModel = HomeViewModel(with: WeatherService())
+        
         window = UIWindow(frame: windoeScene.coordinateSpace.bounds)
         window?.windowScene = windoeScene
-        window?.rootViewController = HomeViewController()
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
         
     }

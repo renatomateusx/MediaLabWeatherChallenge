@@ -7,16 +7,12 @@
 
 import Foundation
 
-protocol HomeViewModelDelegate: AnyObject {
-    func onSuccessFetchingWeather(weather: WeatherResult)
-    func onFailureFetchingWeather(error: Error)
-}
-
 class HomeViewModel {
     
     // MARK: - Private Properties
     let weatherService: WeatherServiceProtocol
-    var delegate: HomeViewModelDelegate?
+    var weather = Bindable<WeatherResult>()
+    var error = Bindable<Error>()
     // MARK: - Inits
     
     init(with service: WeatherServiceProtocol) {
@@ -28,9 +24,9 @@ class HomeViewModel {
             switch result {
             
             case .success(let weather):
-                self.delegate?.onSuccessFetchingWeather(weather: weather)
+                self.weather.value = weather
             case .failure(let error):
-                self.delegate?.onFailureFetchingWeather(error: error)
+                self.error.value = error
             }
         }
     }

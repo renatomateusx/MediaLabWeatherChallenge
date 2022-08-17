@@ -14,12 +14,13 @@ class HomeViewController: UIViewController {
     // MARK: - Private Properties
     
     private var loading: UIActivityIndicatorView?
-    internal let viewModel = HomeViewModel(with: WeatherService())
     private var locationManager: CLLocationManager?
+    
+    var viewModel: HomeViewModel!
     
     private let cityNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Please, allow the app to access your location.\nTouch in any place of the screen."
+        label.text = .localized(.homeTitle)
         label.numberOfLines = 0
         label.sizeToFit()
         label.textColor = UIColor.white
@@ -100,6 +101,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
+        setupObserver()
         setupData()
     }
 }
@@ -176,7 +178,7 @@ extension HomeViewController {
         
         if let message = weather.message {
             DispatchQueue.main.async {
-                self.alert(title: "Oops!",
+                self.alert(title: .localized(.oopsTitle),
                            message: message)
                 self.hideViews(hide: true, hideButton: false)
             }
@@ -190,12 +192,12 @@ extension HomeViewController {
             if let name = weather.name, name.count > 0 {
                 self.cityNameLabel.text = name
             } else {
-                self.cityNameLabel.text = "No City mentioned"
+                self.cityNameLabel.text = .localized(.noCityMentioned)
             }
             self.temperatureLabel.text = "\(main.temp)°"
             self.subTitleLabel.text = "\(weathersub.weatherDescription)"
-            self.mediumTemperatureLabel.text = "Low: \(main.tempMin)° High: \(main.tempMax)°"
-            self.windSpeedLabel.text = "Wind: \(wind.speed) (\(wind.deg))"
+            self.mediumTemperatureLabel.text = .localizedFormat(.minMaxTempreture, String(main.tempMin), String(main.tempMax))
+            self.windSpeedLabel.text = .localizedFormat(.windSpeed, String(wind.speed), String(wind.deg))
             
             let urlImage = String(format:Constants.imageWeatherURL, weathersub.icon)
             let imagePlaceholder = UIImage(named: "placeholder")
@@ -238,8 +240,28 @@ extension HomeViewController {
 
 // MARK: SetupData
 extension HomeViewController {
+    
+    private func setupObserver() {
+        viewModel.weather.bind { [weak self] (_) in
+            if let weather = self?.viewModel.weather.value {
+                self?.showDataRetrieved(weather: weather)
+            }
+           
+            self?.stopLoading()
+        }
+        
+        viewModel.error.bind { [weak self] (_) in
+            if let error = self?.viewModel.error.value {
+                DispatchQueue.main.async {
+                    self?.alert(title: .localized(.oopsTitle), message: error.localizedDescription)
+                    self?.hideViews(hide: true, hideButton: false)
+                    self?.stopLoading()
+                }
+            }
+        }
+    }
+    
     private func setupData() {
-        viewModel.delegate = self
         if (CLLocationManager.locationServicesEnabled()) {
             locationManager = CLLocationManager()
             locationManager?.delegate = self
@@ -249,24 +271,6 @@ extension HomeViewController {
     }
 }
 
-// MARK: - ViewControllerViewModelDelegate
-
-extension HomeViewController: HomeViewModelDelegate {
-    func onSuccessFetchingWeather(weather: WeatherResult) {
-        self.showDataRetrieved(weather: weather)
-        self.stopLoading()
-    }
-    
-    func onFailureFetchingWeather(error: Error) {
-        DispatchQueue.main.async {
-            self.alert(title: "Oops!", message: error.localizedDescription)
-            self.hideViews(hide: true, hideButton: false)
-            self.stopLoading()
-        }
-    }
-}
-
-
 // MARK: - LocationManager
 extension HomeViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -275,8 +279,8 @@ extension HomeViewController: CLLocationManagerDelegate {
         } else if status == .notDetermined {
             locationManager?.requestAlwaysAuthorization()
         } else {
-            self.alert(title: "Oops!",
-                       message: "To use this app you should enable access location.\n Please, go to app configuration and enable it")
+            self.alert(title: .localized(.oopsTitle),
+                       message: .localized(.oopsTitle))
             self.hideViews(hide: true, hideButton: false)
         }
     }
