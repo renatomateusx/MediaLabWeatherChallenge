@@ -118,6 +118,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301F1E9628AEC0F2002871D0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3072E73428A3E11B0095A667 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		301F1E9728AEC0FB002871D0 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				30C1645E28ADA70E00923997 /* Bindable.swift */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		301F1E9828AEC113002871D0 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				30C1645C28ADA17200923997 /* Localizable.swift */,
+				30C1645828ADA01D00923997 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		3072E6EF28A3DF480095A667 = {
 			isa = PBXGroup;
 			children = (
@@ -185,9 +210,8 @@
 			children = (
 				30A4B59428AEB50E003B98EF /* Application */,
 				3072E72D28A3E0CB0095A667 /* Extensions */,
-				30C1645828ADA01D00923997 /* Localizable.strings */,
+				301F1E9828AEC113002871D0 /* Localizable */,
 				3072E70428A3DF490095A667 /* Assets.xcassets */,
-				30C1645C28ADA17200923997 /* Localizable.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -250,9 +274,9 @@
 		3072E73328A3E1060095A667 /* Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				301F1E9728AEC0FB002871D0 /* Binding */,
 				30A4B59128AEB4BD003B98EF /* Coordinators */,
-				3072E73428A3E11B0095A667 /* NetworkService.swift */,
-				30C1645E28ADA70E00923997 /* Bindable.swift */,
+				301F1E9628AEC0F2002871D0 /* Network */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
