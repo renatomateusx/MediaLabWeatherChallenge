@@ -4,6 +4,7 @@ Project made as a Challenge to the MediaLab's Company
 # Used:
 KingFisher<br/>
 URLSession<br/>
+MVVM Arch<br/>
 Unit Tests<br/>
 Bindable<br/>
 Localizable<br/>
