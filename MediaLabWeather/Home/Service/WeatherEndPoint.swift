@@ -25,13 +25,14 @@ struct WeatherEndpoint {
     let lat: Double
     let lon: Double
     let units: Metrics
+    let appConfiguration: AppConfigurations
 
     var host: String {
-        return Constants.weatherURL
+        return appConfiguration.apiBaseURL
     }
     
     var appId: String {
-        return Constants.appId
+        return appConfiguration.apiKey
     }
 
     var path: String {

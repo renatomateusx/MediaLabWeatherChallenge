@@ -18,7 +18,6 @@
 		3072E71D28A3DF490095A667 /* MediaLabWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E71C28A3DF490095A667 /* MediaLabWeatherUITests.swift */; };
 		3072E71F28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E71E28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift */; };
 		3072E73528A3E11B0095A667 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73428A3E11B0095A667 /* NetworkService.swift */; };
-		3072E73728A3E1230095A667 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73628A3E1230095A667 /* Constants.swift */; };
 		3072E73B28A3EE590095A667 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73A28A3EE590095A667 /* Weather.swift */; };
 		3072E73D28A3EFF20095A667 /* WeatherEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73C28A3EFF20095A667 /* WeatherEndPoint.swift */; };
 		3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73E28A3F0F90095A667 /* WeatherService.swift */; };
@@ -27,6 +26,7 @@
 		30A4B59328AEB4DB003B98EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59228AEB4DB003B98EF /* Coordinator.swift */; };
 		30A4B59628AEB519003B98EF /* AppMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59528AEB519003B98EF /* AppMainCoordinator.swift */; };
 		30A4B59928AEB5F9003B98EF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59828AEB5F9003B98EF /* HomeCoordinator.swift */; };
+		30A4B59B28AEB76E003B98EF /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59A28AEB76E003B98EF /* AppConfigurations.swift */; };
 		30C1645928ADA01D00923997 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C1645828ADA01D00923997 /* Localizable.strings */; };
 		30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645A28ADA0DB00923997 /* String+Extensions.swift */; };
 		30C1645D28ADA17200923997 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645C28ADA17200923997 /* Localizable.swift */; };
@@ -70,7 +70,6 @@
 		3072E71C28A3DF490095A667 /* MediaLabWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLabWeatherUITests.swift; sourceTree = "<group>"; };
 		3072E71E28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLabWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3072E73428A3E11B0095A667 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		3072E73628A3E1230095A667 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3072E73A28A3EE590095A667 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		3072E73C28A3EFF20095A667 /* WeatherEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEndPoint.swift; sourceTree = "<group>"; };
 		3072E73E28A3F0F90095A667 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		30A4B59228AEB4DB003B98EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		30A4B59528AEB519003B98EF /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainCoordinator.swift; sourceTree = "<group>"; };
 		30A4B59828AEB5F9003B98EF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		30A4B59A28AEB76E003B98EF /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 		30C1645828ADA01D00923997 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		30C1645A28ADA0DB00923997 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		30C1645C28ADA17200923997 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -252,7 +252,6 @@
 			children = (
 				30A4B59128AEB4BD003B98EF /* Coordinators */,
 				3072E73428A3E11B0095A667 /* NetworkService.swift */,
-				3072E73628A3E1230095A667 /* Constants.swift */,
 				30C1645E28ADA70E00923997 /* Bindable.swift */,
 			);
 			path = Fundamentals;
@@ -271,6 +270,7 @@
 			children = (
 				3072E6FB28A3DF480095A667 /* AppDelegate.swift */,
 				30A4B59528AEB519003B98EF /* AppMainCoordinator.swift */,
+				30A4B59A28AEB76E003B98EF /* AppConfigurations.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -519,10 +519,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3072E73728A3E1230095A667 /* Constants.swift in Sources */,
 				3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */,
 				30A4B59328AEB4DB003B98EF /* Coordinator.swift in Sources */,
 				3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */,
+				30A4B59B28AEB76E003B98EF /* AppConfigurations.swift in Sources */,
 				3072E73D28A3EFF20095A667 /* WeatherEndPoint.swift in Sources */,
 				30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */,
 				3072E74528A3F5AD0095A667 /* UIViewController+Extensions.swift in Sources */,
@@ -589,6 +589,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://api.openweathermap.org/data/2.5/";
+				API_KEY = d4277b87ee5c71a468ec0c3dc311a724;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -635,6 +637,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IMAGE_WEATHER_URL = "https://openweathermap.org/img/wn/%@@2x.png";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -649,6 +652,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://api.openweathermap.org/data/2.5/";
+				API_KEY = d4277b87ee5c71a468ec0c3dc311a724;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -689,6 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IMAGE_WEATHER_URL = "https://openweathermap.org/img/wn/%@@2x.png";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

@@ -199,7 +199,7 @@ extension HomeViewController {
             self.mediumTemperatureLabel.text = .localizedFormat(.minMaxTempreture, String(main.tempMin), String(main.tempMax))
             self.windSpeedLabel.text = .localizedFormat(.windSpeed, String(wind.speed), String(wind.deg))
             
-            let urlImage = String(format:Constants.imageWeatherURL, weathersub.icon)
+            let urlImage = String(format: self.viewModel.weatherService.appConfiguration.imagesBaseURL, weathersub.icon)
             let imagePlaceholder = UIImage(named: "placeholder")
             if let url = URL(string: urlImage) {
                 self.weatherImageView.kf.setImage(with: url,
