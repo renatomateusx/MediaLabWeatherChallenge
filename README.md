@@ -6,7 +6,7 @@ KingFisher<br/>
 URLSession<br/>
 Unit Tests<br/>
 Bindable<br/>
-Localize<br/>
+Localizable<br/>
 SnapshotingTesting (please use iPhone 11 - iOS 15.4) <br/>
 
 # Preview
