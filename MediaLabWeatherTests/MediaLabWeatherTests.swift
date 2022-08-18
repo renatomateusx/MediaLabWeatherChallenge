@@ -13,18 +13,26 @@ import SnapshotTesting
 
 class MediaLabWeatherTests: XCTestCase {
     
-    var viewController: HomeViewController!
     var window: UIWindow!
+    private var mainCoordinator: AppMainCoordinator?
     
     override func setUp() {
         super.setUp()
         
-        viewController = HomeViewController()
-        viewController.viewModel = HomeViewModel(with: WeatherServiceMockSuccess())
-        viewController.loadViewIfNeeded()
+        guard let firstScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+            return
+        }
+
+        guard let firstWindow = firstScene.windows.first else {
+            return
+        }
         
-        window = UIApplication.shared.windows.first
-        window.rootViewController = viewController
+        window = firstWindow
+        
+        let navigationController = UINavigationController()
+        window?.rootViewController = navigationController
+        mainCoordinator = AppMainCoordinator(navigationController: navigationController)
+        mainCoordinator?.start()
         window.makeKeyAndVisible()
     }
     
@@ -34,7 +42,8 @@ class MediaLabWeatherTests: XCTestCase {
     
     func testInitialState() {
         sleep(3)
-        
-        assertSnapshot(matching: viewController, as: .image(precision: 0.99))
+        if let vc =  mainCoordinator?.navigationController.viewControllers.first {
+            assertSnapshot(matching:vc, as: .image(precision: 0.99))
+        }
     }
 }

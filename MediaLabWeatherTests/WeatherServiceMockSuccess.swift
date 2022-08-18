@@ -10,6 +10,7 @@ import Foundation
 @testable import MediaLabWeather
 
 class WeatherServiceMockSuccess: WeatherServiceProtocol {
+    var appConfiguration: AppConfigurations = AppConfigurations()
     
     func fetchData(_ coord: Coordinates, completion: @escaping (Result<WeatherResult, Error>) -> Void) {
         let fakeDataModel: WeatherResult = WeatherResult(coord: Coord(lon: -222.0, lat: 222.0),
