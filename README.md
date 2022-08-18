@@ -7,6 +7,7 @@ URLSession<br/>
 Unit Tests<br/>
 Bindable<br/>
 Localize<br/>
+SnapshotingTesting (please use iPhone 11 - iOS 15.4) <br/>
 
 # Preview
 <img src="https://github.com/renatomateusx/MediaLabWeatherChallenge/blob/master/MediaLabWeatherChallenge.gif" width="350" title="MediaLabs Challenge">
