@@ -184,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				30A4B59428AEB50E003B98EF /* Application */,
-				3072E70428A3DF490095A667 /* Assets.xcassets */,
 				3072E72D28A3E0CB0095A667 /* Extensions */,
 				30C1645828ADA01D00923997 /* Localizable.strings */,
+				3072E70428A3DF490095A667 /* Assets.xcassets */,
 				30C1645C28ADA17200923997 /* Localizable.swift */,
 			);
 			path = Resources;
