@@ -7,6 +7,13 @@
 
 import Foundation
 
+protocol HomeViewModelProtocol {
+    func fetchData(_ coord: Coordinates)
+    
+    var weather: Bindable<WeatherResult> { get set }
+    var error: Bindable<Error> { get set }
+}
+
 class HomeViewModel {
     
     // MARK: - Private Properties
