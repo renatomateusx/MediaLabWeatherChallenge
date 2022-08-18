@@ -11,7 +11,6 @@
 		3003D74828A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */; };
 		3003D74A28A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */; };
 		3072E6FC28A3DF480095A667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E6FB28A3DF480095A667 /* AppDelegate.swift */; };
-		3072E6FE28A3DF480095A667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E6FD28A3DF480095A667 /* SceneDelegate.swift */; };
 		3072E70028A3DF480095A667 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E6FF28A3DF480095A667 /* HomeViewController.swift */; };
 		3072E70528A3DF490095A667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3072E70428A3DF490095A667 /* Assets.xcassets */; };
 		3072E70828A3DF490095A667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3072E70628A3DF490095A667 /* LaunchScreen.storyboard */; };
@@ -25,6 +24,9 @@
 		3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73E28A3F0F90095A667 /* WeatherService.swift */; };
 		3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E74228A3F48F0095A667 /* HomeViewModel.swift */; };
 		3072E74528A3F5AD0095A667 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */; };
+		30A4B59328AEB4DB003B98EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59228AEB4DB003B98EF /* Coordinator.swift */; };
+		30A4B59628AEB519003B98EF /* AppMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59528AEB519003B98EF /* AppMainCoordinator.swift */; };
+		30A4B59928AEB5F9003B98EF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59828AEB5F9003B98EF /* HomeCoordinator.swift */; };
 		30C1645928ADA01D00923997 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C1645828ADA01D00923997 /* Localizable.strings */; };
 		30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645A28ADA0DB00923997 /* String+Extensions.swift */; };
 		30C1645D28ADA17200923997 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1645C28ADA17200923997 /* Localizable.swift */; };
@@ -58,7 +60,6 @@
 		3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMockFailure.swift; sourceTree = "<group>"; };
 		3072E6F828A3DF480095A667 /* MediaLabWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaLabWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3072E6FB28A3DF480095A667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3072E6FD28A3DF480095A667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3072E6FF28A3DF480095A667 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3072E70428A3DF490095A667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3072E70728A3DF490095A667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +76,9 @@
 		3072E73E28A3F0F90095A667 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		3072E74228A3F48F0095A667 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		30A4B59228AEB4DB003B98EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		30A4B59528AEB519003B98EF /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainCoordinator.swift; sourceTree = "<group>"; };
+		30A4B59828AEB5F9003B98EF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		30C1645828ADA01D00923997 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		30C1645A28ADA0DB00923997 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		30C1645C28ADA17200923997 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -179,8 +183,7 @@
 		3072E72C28A3DF740095A667 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3072E6FD28A3DF480095A667 /* SceneDelegate.swift */,
-				3072E6FB28A3DF480095A667 /* AppDelegate.swift */,
+				30A4B59428AEB50E003B98EF /* Application */,
 				3072E70428A3DF490095A667 /* Assets.xcassets */,
 				3072E72D28A3E0CB0095A667 /* Extensions */,
 				30C1645828ADA01D00923997 /* Localizable.strings */,
@@ -201,6 +204,7 @@
 		3072E72E28A3E0D60095A667 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				30A4B59728AEB5E9003B98EF /* Coordinator */,
 				3072E73028A3E0E70095A667 /* View */,
 				3072E72F28A3E0E30095A667 /* Model */,
 				3072E73128A3E0EF0095A667 /* ViewModel */,
@@ -246,11 +250,37 @@
 		3072E73328A3E1060095A667 /* Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				30A4B59128AEB4BD003B98EF /* Coordinators */,
 				3072E73428A3E11B0095A667 /* NetworkService.swift */,
 				3072E73628A3E1230095A667 /* Constants.swift */,
 				30C1645E28ADA70E00923997 /* Bindable.swift */,
 			);
 			path = Fundamentals;
+			sourceTree = "<group>";
+		};
+		30A4B59128AEB4BD003B98EF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				30A4B59228AEB4DB003B98EF /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		30A4B59428AEB50E003B98EF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3072E6FB28A3DF480095A667 /* AppDelegate.swift */,
+				30A4B59528AEB519003B98EF /* AppMainCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		30A4B59728AEB5E9003B98EF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				30A4B59828AEB5F9003B98EF /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		96A845BEB7DAFFEDCEB8464D /* Frameworks */ = {
@@ -491,6 +521,7 @@
 			files = (
 				3072E73728A3E1230095A667 /* Constants.swift in Sources */,
 				3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */,
+				30A4B59328AEB4DB003B98EF /* Coordinator.swift in Sources */,
 				3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */,
 				3072E73D28A3EFF20095A667 /* WeatherEndPoint.swift in Sources */,
 				30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */,
@@ -499,8 +530,9 @@
 				3072E6FC28A3DF480095A667 /* AppDelegate.swift in Sources */,
 				30C1645F28ADA70E00923997 /* Bindable.swift in Sources */,
 				3003D74628A40B3300D7D3C1 /* Coordinates.swift in Sources */,
+				30A4B59628AEB519003B98EF /* AppMainCoordinator.swift in Sources */,
 				3072E73528A3E11B0095A667 /* NetworkService.swift in Sources */,
-				3072E6FE28A3DF480095A667 /* SceneDelegate.swift in Sources */,
+				30A4B59928AEB5F9003B98EF /* HomeCoordinator.swift in Sources */,
 				30C1645D28ADA17200923997 /* Localizable.swift in Sources */,
 				3072E73B28A3EE590095A667 /* Weather.swift in Sources */,
 			);
