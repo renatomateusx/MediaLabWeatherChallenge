@@ -172,7 +172,6 @@
 				3072E72C28A3DF740095A667 /* Resources */,
 				3072E72E28A3E0D60095A667 /* Home */,
 				3072E73328A3E1060095A667 /* Fundamentals */,
-				3072E70928A3DF490095A667 /* Info.plist */,
 			);
 			path = MediaLabWeather;
 			sourceTree = "<group>";
@@ -212,6 +211,7 @@
 				3072E72D28A3E0CB0095A667 /* Extensions */,
 				301F1E9828AEC113002871D0 /* Localizable */,
 				3072E70428A3DF490095A667 /* Assets.xcassets */,
+				3072E70928A3DF490095A667 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -739,7 +739,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3GN5WJ7SZD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MediaLabWeather/Info.plist;
+				INFOPLIST_FILE = MediaLabWeather/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -769,7 +769,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3GN5WJ7SZD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MediaLabWeather/Info.plist;
+				INFOPLIST_FILE = MediaLabWeather/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
