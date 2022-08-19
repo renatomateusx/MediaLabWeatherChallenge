@@ -17,6 +17,8 @@ class HomeViewModelTests: XCTestCase {
     lazy var serviceMockSuccess: WeatherRepositoryMockSuccess = WeatherRepositoryMockSuccess()
     lazy var serviceMockFailure: WeatherRepositoryMockFailure = WeatherRepositoryMockFailure()
     
+    let homeCoordinator = HomeCoordinator(navigationController: UINavigationController())
+    
     override func tearDown() {
         viewModel = nil
         
@@ -24,7 +26,7 @@ class HomeViewModelTests: XCTestCase {
     }
     
     func testFetchIfSuccess() {
-        viewModel = HomeViewModel(with: serviceMockSuccess)
+        viewModel = HomeViewModel(with: serviceMockSuccess, coordinator: homeCoordinator)
         viewModel.weather.bind { [unowned self] (_) in
             if let weather = self.viewModel.weather.value {
                 self.successCompletion(weather)
@@ -40,7 +42,7 @@ class HomeViewModelTests: XCTestCase {
     }
     
     func testFetchPostsIfFailure() {
-        viewModel = HomeViewModel(with: serviceMockFailure)
+        viewModel = HomeViewModel(with: serviceMockFailure, coordinator: homeCoordinator)
         viewModel.error.bind { [unowned self] (_) in
             if let error = self.viewModel.error.value {
                 failureCompletion(error)

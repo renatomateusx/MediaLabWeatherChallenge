@@ -18,12 +18,14 @@ class HomeViewModel {
     
     // MARK: - Private Properties
     let weatherService: WeatherRepositoryProtocol
+    let coordinator: HomeCoordinator
     var weather = Bindable<WeatherResult>()
     var error = Bindable<Error>()
     // MARK: - Inits
     
-    init(with service: WeatherRepositoryProtocol) {
+    init(with service: WeatherRepositoryProtocol, coordinator: HomeCoordinator) {
         self.weatherService = service
+        self.coordinator = coordinator
     }
     
     func fetchData(_ coord: Coordinates) {

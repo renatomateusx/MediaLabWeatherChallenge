@@ -12,21 +12,23 @@ class HomeCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
-  
-    
-    private weak var moviesListViewController: HomeViewController?
+    private weak var homeViewController: HomeViewController?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let viewModel = HomeViewModel(with: WeatherRepository())
+        let viewModel = HomeViewModel(with: WeatherRepository(), coordinator: self)
         
         let vc = HomeViewController()
         vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: false)
-        moviesListViewController = vc
+        homeViewController = vc
+    }
+    
+    func goToDetails() {
+        print("details")
     }
 }
 

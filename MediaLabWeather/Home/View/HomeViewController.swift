@@ -298,3 +298,8 @@ extension HomeViewController: CLLocationManagerDelegate {
         }
     }
 }
+
+extension HomeViewController {
+    // If you need to go to another screen, you can call
+//    self.viewModel.coordinator.goToDetails()
+}
