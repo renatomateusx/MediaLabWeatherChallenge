@@ -14,8 +14,8 @@ class HomeViewModelTests: XCTestCase {
     var viewModel: HomeViewModel!
     var successCompletion: Completion<Any>!
     var failureCompletion: Completion<Any>!
-    lazy var serviceMockSuccess: WeatherServiceMockSuccess = WeatherServiceMockSuccess()
-    lazy var serviceMockFailure: WeatherServiceMockFailure = WeatherServiceMockFailure()
+    lazy var serviceMockSuccess: WeatherRepositoryMockSuccess = WeatherRepositoryMockSuccess()
+    lazy var serviceMockFailure: WeatherRepositoryMockFailure = WeatherRepositoryMockFailure()
     
     override func tearDown() {
         viewModel = nil

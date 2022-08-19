@@ -21,7 +21,7 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = HomeViewModel(with: WeatherService())
+        let viewModel = HomeViewModel(with: WeatherRepository())
         
         let vc = HomeViewController()
         vc.viewModel = viewModel

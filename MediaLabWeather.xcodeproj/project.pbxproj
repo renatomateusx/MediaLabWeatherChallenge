@@ -8,19 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3003D74628A40B3300D7D3C1 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74528A40B3300D7D3C1 /* Coordinates.swift */; };
-		3003D74828A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */; };
-		3003D74A28A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */; };
+		3003D74828A4291E00D7D3C1 /* WeatherRepositoryMockSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74728A4291E00D7D3C1 /* WeatherRepositoryMockSuccess.swift */; };
+		3003D74A28A42D6D00D7D3C1 /* WeatherRepositoryMockFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003D74928A42D6D00D7D3C1 /* WeatherRepositoryMockFailure.swift */; };
 		3072E6FC28A3DF480095A667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E6FB28A3DF480095A667 /* AppDelegate.swift */; };
 		3072E70028A3DF480095A667 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E6FF28A3DF480095A667 /* HomeViewController.swift */; };
 		3072E70528A3DF490095A667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3072E70428A3DF490095A667 /* Assets.xcassets */; };
 		3072E70828A3DF490095A667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3072E70628A3DF490095A667 /* LaunchScreen.storyboard */; };
 		3072E71328A3DF490095A667 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E71228A3DF490095A667 /* HomeViewModelTests.swift */; };
-		3072E71D28A3DF490095A667 /* MediaLabWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E71C28A3DF490095A667 /* MediaLabWeatherUITests.swift */; };
-		3072E71F28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E71E28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift */; };
-		3072E73528A3E11B0095A667 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73428A3E11B0095A667 /* NetworkService.swift */; };
+		3072E73528A3E11B0095A667 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73428A3E11B0095A667 /* NetworkRepository.swift */; };
 		3072E73B28A3EE590095A667 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73A28A3EE590095A667 /* Weather.swift */; };
 		3072E73D28A3EFF20095A667 /* WeatherEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73C28A3EFF20095A667 /* WeatherEndPoint.swift */; };
-		3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73E28A3F0F90095A667 /* WeatherService.swift */; };
+		3072E73F28A3F0F90095A667 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E73E28A3F0F90095A667 /* WeatherRepository.swift */; };
 		3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E74228A3F48F0095A667 /* HomeViewModel.swift */; };
 		3072E74528A3F5AD0095A667 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */; };
 		30A4B59328AEB4DB003B98EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4B59228AEB4DB003B98EF /* Coordinator.swift */; };
@@ -44,20 +42,13 @@
 			remoteGlobalIDString = 3072E6F728A3DF480095A667;
 			remoteInfo = MediaLabWeather;
 		};
-		3072E71928A3DF490095A667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3072E6F028A3DF480095A667 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3072E6F728A3DF480095A667;
-			remoteInfo = MediaLabWeather;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A7C6D42628CC6E2E3A8D616 /* Pods-MediaLabWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaLabWeatherTests.release.xcconfig"; path = "Target Support Files/Pods-MediaLabWeatherTests/Pods-MediaLabWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		3003D74528A40B3300D7D3C1 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
-		3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMockSuccess.swift; sourceTree = "<group>"; };
-		3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMockFailure.swift; sourceTree = "<group>"; };
+		3003D74728A4291E00D7D3C1 /* WeatherRepositoryMockSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryMockSuccess.swift; sourceTree = "<group>"; };
+		3003D74928A42D6D00D7D3C1 /* WeatherRepositoryMockFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryMockFailure.swift; sourceTree = "<group>"; };
 		3072E6F828A3DF480095A667 /* MediaLabWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaLabWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3072E6FB28A3DF480095A667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3072E6FF28A3DF480095A667 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,13 +57,10 @@
 		3072E70928A3DF490095A667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3072E70E28A3DF490095A667 /* MediaLabWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaLabWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3072E71228A3DF490095A667 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
-		3072E71828A3DF490095A667 /* MediaLabWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaLabWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3072E71C28A3DF490095A667 /* MediaLabWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLabWeatherUITests.swift; sourceTree = "<group>"; };
-		3072E71E28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLabWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3072E73428A3E11B0095A667 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3072E73428A3E11B0095A667 /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
 		3072E73A28A3EE590095A667 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		3072E73C28A3EFF20095A667 /* WeatherEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEndPoint.swift; sourceTree = "<group>"; };
-		3072E73E28A3F0F90095A667 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		3072E73E28A3F0F90095A667 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		3072E74228A3F48F0095A667 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3072E74428A3F5AD0095A667 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30A4B59228AEB4DB003B98EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -108,20 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3072E71528A3DF490095A667 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		301F1E9628AEC0F2002871D0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3072E73428A3E11B0095A667 /* NetworkService.swift */,
+				3072E73428A3E11B0095A667 /* NetworkRepository.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -148,7 +129,6 @@
 			children = (
 				3072E6FA28A3DF480095A667 /* MediaLabWeather */,
 				3072E71128A3DF490095A667 /* MediaLabWeatherTests */,
-				3072E71B28A3DF490095A667 /* MediaLabWeatherUITests */,
 				3072E6F928A3DF480095A667 /* Products */,
 				B8D6966DA559E87B61A43258 /* Pods */,
 				96A845BEB7DAFFEDCEB8464D /* Frameworks */,
@@ -160,7 +140,6 @@
 			children = (
 				3072E6F828A3DF480095A667 /* MediaLabWeather.app */,
 				3072E70E28A3DF490095A667 /* MediaLabWeatherTests.xctest */,
-				3072E71828A3DF490095A667 /* MediaLabWeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,15 +163,6 @@
 				30CE6A5E28AF8C2F0071D3F2 /* Mock */,
 			);
 			path = MediaLabWeatherTests;
-			sourceTree = "<group>";
-		};
-		3072E71B28A3DF490095A667 /* MediaLabWeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3072E71C28A3DF490095A667 /* MediaLabWeatherUITests.swift */,
-				3072E71E28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift */,
-			);
-			path = MediaLabWeatherUITests;
 			sourceTree = "<group>";
 		};
 		3072E72B28A3DF510095A667 /* Base.Iproj */ = {
@@ -231,7 +201,7 @@
 				3072E73028A3E0E70095A667 /* View */,
 				3072E72F28A3E0E30095A667 /* Model */,
 				3072E73128A3E0EF0095A667 /* ViewModel */,
-				3072E73228A3E0F80095A667 /* Service */,
+				3072E73228A3E0F80095A667 /* Repository */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -261,13 +231,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		3072E73228A3E0F80095A667 /* Service */ = {
+		3072E73228A3E0F80095A667 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				3072E73C28A3EFF20095A667 /* WeatherEndPoint.swift */,
-				3072E73E28A3F0F90095A667 /* WeatherService.swift */,
+				30DAD96228AFE5DA0090ABAE /* EndPoint */,
+				3072E73E28A3F0F90095A667 /* WeatherRepository.swift */,
 			);
-			path = Service;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		3072E73328A3E1060095A667 /* Fundamentals */ = {
@@ -309,8 +279,8 @@
 		30CE6A5E28AF8C2F0071D3F2 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */,
-				3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */,
+				3003D74728A4291E00D7D3C1 /* WeatherRepositoryMockSuccess.swift */,
+				3003D74928A42D6D00D7D3C1 /* WeatherRepositoryMockFailure.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -329,6 +299,14 @@
 				3072E71228A3DF490095A667 /* HomeViewModelTests.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30DAD96228AFE5DA0090ABAE /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				3072E73C28A3EFF20095A667 /* WeatherEndPoint.swift */,
+			);
+			path = EndPoint;
 			sourceTree = "<group>";
 		};
 		96A845BEB7DAFFEDCEB8464D /* Frameworks */ = {
@@ -393,24 +371,6 @@
 			productReference = 3072E70E28A3DF490095A667 /* MediaLabWeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3072E71728A3DF490095A667 /* MediaLabWeatherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3072E72828A3DF490095A667 /* Build configuration list for PBXNativeTarget "MediaLabWeatherUITests" */;
-			buildPhases = (
-				3072E71428A3DF490095A667 /* Sources */,
-				3072E71528A3DF490095A667 /* Frameworks */,
-				3072E71628A3DF490095A667 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3072E71A28A3DF490095A667 /* PBXTargetDependency */,
-			);
-			name = MediaLabWeatherUITests;
-			productName = MediaLabWeatherUITests;
-			productReference = 3072E71828A3DF490095A667 /* MediaLabWeatherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -425,10 +385,6 @@
 						CreatedOnToolsVersion = 13.3;
 					};
 					3072E70D28A3DF490095A667 = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = 3072E6F728A3DF480095A667;
-					};
-					3072E71728A3DF490095A667 = {
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = 3072E6F728A3DF480095A667;
 					};
@@ -449,7 +405,6 @@
 			targets = (
 				3072E6F728A3DF480095A667 /* MediaLabWeather */,
 				3072E70D28A3DF490095A667 /* MediaLabWeatherTests */,
-				3072E71728A3DF490095A667 /* MediaLabWeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,13 +421,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3072E70C28A3DF490095A667 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3072E71628A3DF490095A667 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -569,7 +517,7 @@
 			files = (
 				3072E74328A3F48F0095A667 /* HomeViewModel.swift in Sources */,
 				30A4B59328AEB4DB003B98EF /* Coordinator.swift in Sources */,
-				3072E73F28A3F0F90095A667 /* WeatherService.swift in Sources */,
+				3072E73F28A3F0F90095A667 /* WeatherRepository.swift in Sources */,
 				30A4B59B28AEB76E003B98EF /* AppConfigurations.swift in Sources */,
 				3072E73D28A3EFF20095A667 /* WeatherEndPoint.swift in Sources */,
 				30C1645B28ADA0DB00923997 /* String+Extensions.swift in Sources */,
@@ -579,7 +527,7 @@
 				30C1645F28ADA70E00923997 /* Bindable.swift in Sources */,
 				3003D74628A40B3300D7D3C1 /* Coordinates.swift in Sources */,
 				30A4B59628AEB519003B98EF /* AppMainCoordinator.swift in Sources */,
-				3072E73528A3E11B0095A667 /* NetworkService.swift in Sources */,
+				3072E73528A3E11B0095A667 /* NetworkRepository.swift in Sources */,
 				30A4B59928AEB5F9003B98EF /* HomeCoordinator.swift in Sources */,
 				30C1645D28ADA17200923997 /* Localizable.swift in Sources */,
 				3072E73B28A3EE590095A667 /* Weather.swift in Sources */,
@@ -590,19 +538,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3003D74828A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift in Sources */,
-				3003D74A28A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift in Sources */,
+				3003D74828A4291E00D7D3C1 /* WeatherRepositoryMockSuccess.swift in Sources */,
+				3003D74A28A42D6D00D7D3C1 /* WeatherRepositoryMockFailure.swift in Sources */,
 				3072E71328A3DF490095A667 /* HomeViewModelTests.swift in Sources */,
 				30C1646128ADAAFE00923997 /* MediaLabWeatherTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3072E71428A3DF490095A667 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3072E71F28A3DF490095A667 /* MediaLabWeatherUITestsLaunchTests.swift in Sources */,
-				3072E71D28A3DF490095A667 /* MediaLabWeatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,11 +552,6 @@
 			isa = PBXTargetDependency;
 			target = 3072E6F728A3DF480095A667 /* MediaLabWeather */;
 			targetProxy = 3072E70F28A3DF490095A667 /* PBXContainerItemProxy */;
-		};
-		3072E71A28A3DF490095A667 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3072E6F728A3DF480095A667 /* MediaLabWeather */;
-			targetProxy = 3072E71928A3DF490095A667 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -855,42 +789,6 @@
 			};
 			name = Release;
 		};
-		3072E72928A3DF490095A667 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3GN5WJ7SZD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.renatomateusx.MediaLabWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MediaLabWeather;
-			};
-			name = Debug;
-		};
-		3072E72A28A3DF490095A667 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3GN5WJ7SZD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.renatomateusx.MediaLabWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MediaLabWeather;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -917,15 +815,6 @@
 			buildConfigurations = (
 				3072E72628A3DF490095A667 /* Debug */,
 				3072E72728A3DF490095A667 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3072E72828A3DF490095A667 /* Build configuration list for PBXNativeTarget "MediaLabWeatherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3072E72928A3DF490095A667 /* Debug */,
-				3072E72A28A3DF490095A667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

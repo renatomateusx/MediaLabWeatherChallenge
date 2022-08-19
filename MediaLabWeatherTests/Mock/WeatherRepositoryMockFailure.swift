@@ -1,5 +1,5 @@
 //
-//  WeatherServiceMockFailure.swift
+//  WeatherRepositoryMockFailure.swift
 //  MediaLabWeatherTests
 //
 //  Created by Renato Mateus on 10/08/22.
@@ -8,7 +8,7 @@
 import Foundation
 @testable import MediaLabWeather
 
-class WeatherServiceMockFailure: WeatherServiceProtocol {
+class WeatherRepositoryMockFailure: WeatherRepositoryProtocol {
     var appConfiguration: AppConfigurations = AppConfigurations()
     
     func fetchData(_ coord: Coordinates, completion: @escaping (Result<WeatherResult, Error>) -> Void) {

@@ -17,12 +17,12 @@ protocol HomeViewModelProtocol {
 class HomeViewModel {
     
     // MARK: - Private Properties
-    let weatherService: WeatherServiceProtocol
+    let weatherService: WeatherRepositoryProtocol
     var weather = Bindable<WeatherResult>()
     var error = Bindable<Error>()
     // MARK: - Inits
     
-    init(with service: WeatherServiceProtocol) {
+    init(with service: WeatherRepositoryProtocol) {
         self.weatherService = service
     }
     
