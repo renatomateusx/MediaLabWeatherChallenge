@@ -32,7 +32,7 @@ class HomeViewModelTests: XCTestCase {
         }
         let expectation = XCTestExpectation.init(description: "Weather Data")
         self.successCompletion = { posts in
-            XCTAssertNotNil(posts, "No data was downloaded.")
+            XCTAssertNotNil(posts, .localized(.noDataDownloaded))
             expectation.fulfill()
         }
         viewModel.fetchData(Coordinates(lon: -22.0000, lat: 33.0000))
@@ -48,7 +48,7 @@ class HomeViewModelTests: XCTestCase {
         }
         let expectation = XCTestExpectation.init(description: "Error")
         self.failureCompletion = { error in
-            XCTAssertNotNil(error, "No data was downloaded.")
+            XCTAssertNotNil(error, .localized(.noDataDownloaded))
             expectation.fulfill()
         }
         viewModel.fetchData(Coordinates(lon: -22.0000, lat: 33.0000))

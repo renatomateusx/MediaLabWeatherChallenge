@@ -179,10 +179,9 @@
 		3072E71128A3DF490095A667 /* MediaLabWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				3072E71228A3DF490095A667 /* HomeViewModelTests.swift */,
-				3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */,
-				3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */,
-				30C1646028ADAAFE00923997 /* MediaLabWeatherTests.swift */,
+				30CE6A6028AF8C5A0071D3F2 /* ViewModel */,
+				30CE6A5F28AF8C460071D3F2 /* View */,
+				30CE6A5E28AF8C2F0071D3F2 /* Mock */,
 			);
 			path = MediaLabWeatherTests;
 			sourceTree = "<group>";
@@ -305,6 +304,31 @@
 				30A4B59828AEB5F9003B98EF /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		30CE6A5E28AF8C2F0071D3F2 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3003D74728A4291E00D7D3C1 /* WeatherServiceMockSuccess.swift */,
+				3003D74928A42D6D00D7D3C1 /* WeatherServiceMockFailure.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		30CE6A5F28AF8C460071D3F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30C1646028ADAAFE00923997 /* MediaLabWeatherTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30CE6A6028AF8C5A0071D3F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3072E71228A3DF490095A667 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		96A845BEB7DAFFEDCEB8464D /* Frameworks */ = {

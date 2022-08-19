@@ -13,3 +13,8 @@
 "min_max_tempreture" = "Low: %@° High: %@°";
 "wind_speed" = "Wind: %@ (%@)";
 
+
+// No data downloaded
+
+"no_data_downloaded" = "No data was downloaded.";
+
